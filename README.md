@@ -57,3 +57,12 @@ If you want to remove kubernetes again, use this script. This will not uninstall
 ```sh
 bash 99_cleanup.sh
 ```
+
+## Hints
+
+When using this method, __ALL__ services will be exposed to the internet. If you want to exclude one, you have to manually create policies to deny access from outside. An example for calico can be found here:
+
+- <https://docs.tigera.io/calico/latest/network-policy/policy-rules/service-policy>
+- <https://docs.tigera.io/calico/latest/network-policy/get-started/>
+- <https://docs.tigera.io/calico/latest/network-policy/policy-rules/external-ips-policy>
+
