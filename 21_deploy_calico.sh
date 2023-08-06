@@ -15,4 +15,4 @@ helm install calico ./tigera-operator --namespace tigera-operator --create-names
 #helm install ingress-nginx ./ingress-nginx --set controller.keda.service.ipFamilies={IPv6}
 
 #helm repo add tibeer https://tibeer.github.io/helm-charts/
-helm install foo ./default-helmchart --set ingress={}
+helm install foo ./nginx-welcome --set ingress={}
